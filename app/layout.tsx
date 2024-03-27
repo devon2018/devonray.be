@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Georama } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "Personal Website & Portfolio - Devon Ray",
@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>{children}</body>
+      <Analytics />
     </html>
   );
 }

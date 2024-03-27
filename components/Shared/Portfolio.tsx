@@ -81,8 +81,8 @@ const Portfolio: React.FC<PortfolioProps> = ({
         <Swiper
           spaceBetween={50}
           slidesPerView={3}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
+          // onSlideChange={() => console.log("slide change")}
+          // onSwiper={(swiper) => console.log(swiper)}
           grid={{
             rows: 1,
             fill: "row",
