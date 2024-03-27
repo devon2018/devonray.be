@@ -63,7 +63,7 @@ const Footer: React.FC<FooterProps> = ({ lang = "en" }) => {
           <a href="tel:+447577038482" className="block my-3">
             +44 7577 038 482
           </a>
-          <a href={`mail:${emailAddress[lang]}`} className="block my-3">
+          <a href={`mailto:${emailAddress[lang]}`} className="block my-3">
             {emailAddress[lang]}
           </a>
         </div>
