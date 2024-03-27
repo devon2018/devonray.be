@@ -9,6 +9,9 @@ const georama = Georama({ subsets: ["latin"], variable: "--font-body" });
 export const metadata: Metadata = {
   title: "Devon Ray",
   description: "Devon Ray",
+  other: {
+    seobility: 'f19ca9be1a5cd340872c4f55c3234740'
+  }
 };
 
 export default function RootLayout({
