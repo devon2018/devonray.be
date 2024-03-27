@@ -28,7 +28,7 @@ export default function Home() {
         buttonTitle="Zullen we aan de slag"
       />
       <AboutUs id="over-mij" title="Over Mij">
-        Ik ben Devon Ray, freelance software developer. Ik heb meegewerkt aan de
+        Ik ben Devon Ray, freelance software ontwikkelaar. Ik heb meegewerkt aan de
         ontwikkeling en het onderhoud van uiteenlopende projecten en
         SaaS-producten voor start-ups en scale-ups. Zo hielp ik bedrijven als
         Overwatch Research, Goodtill, WhyBuy, ZoomEV en anderen floreren.
