@@ -2,7 +2,7 @@ import React from "react";
 import ContactForm from "./ContactForm";
 
 interface ContactUsProps {
-  title: string;
+  title?: string;
 }
 
 const ContactUs: React.FC<ContactUsProps> = ({

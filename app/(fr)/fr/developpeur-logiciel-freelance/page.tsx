@@ -6,7 +6,11 @@ import Portfolio from "@/components/Shared/Portfolio";
 import Testimonials from "@/components/Shared/Testimonials";
 import { Suspense } from "react";
 import OurServices from "@/components/Shared/OurServices";
-import squareImage from "../../../../public/900.png";
+import mobAppImage from '../../../../public/services/app-dev.jpg';
+import webImage from '../../../../public/services/web-dev.jpg';
+import customSoftwareImage from '../../../../public/services/software.jpg';
+import devopsImage from '../../../../public/services/devops.jpg';
+
 
 export default function Home() {
   return (
@@ -38,25 +42,25 @@ export default function Home() {
         services={[
           {
             title: "Développement d'applications mobiles",
-            image: squareImage,
+            image: mobAppImage,
             description:
               "Donnez vie à vos idées grâce à une application mobile personnalisée ! Je suis spécialisé dans la création d'applications conviviales et captivantes pour les plateformes iOS et Android. Je maîtrise parfaitement Flutter et React Native pour le développement multi-plateforme, ainsi que Swift et Kotlin pour un développement natif optimal.",
           },
           {
             title: "Développement d'applications Web",
-            image: squareImage,
+            image: webImage,
             description:
               "Grâce à des frameworks de pointe comme React, Vue.js et Svelte, je crée des applications et plateformes web ultra-performantes qui vous aideront à toucher un public plus large et à propulser votre entreprise vers de nouveaux sommets.",
           },
           {
             title: "Développement de logiciels sur mesure",
-            image: squareImage,
+            image: customSoftwareImage,
             description:
               "Besoin d'une solution technique sur mesure qui vous corresponde parfaitement ? Mon expertise en Python, PHP et en frameworks comme Laravel et FastAPI (entre autres !) me permet de concevoir et de développer des logiciels personnalisés qui optimisent votre flux de travail et décuplent votre productivité.",
           },
           {
             title: "Développement DevOps et d'infrastructure",
-            image: squareImage,
+            image: devopsImage,
             description:
               "Créer et maintenir l'infrastructure de votre plateforme, c'est mon dada ! J'utilise des outils comme AWS, Jira, Github et Github Actions pour mettre en œuvre des pratiques DevOps qui garantissent un fonctionnement fluide, une évolutivité et un flux de développement rationalisé.",
           },
