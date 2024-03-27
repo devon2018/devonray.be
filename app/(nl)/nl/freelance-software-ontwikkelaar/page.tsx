@@ -10,6 +10,13 @@ import mobAppImage from '../../../../public/services/app-dev.jpg';
 import webImage from '../../../../public/services/web-dev.jpg';
 import customSoftwareImage from '../../../../public/services/software.jpg';
 import devopsImage from '../../../../public/services/devops.jpg';
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Freelance Software Ontwikkelaar - Devon Ray",
+  description:
+    "Ervaren freelance software developer (Laravel, Flutter, React) beschikbaar. Bouw schaalbare web- & mobiele apps. Ervaring met AWS, DevOps & Serverless. Gratis consult!",
+};
 
 export default function Home() {
   return (

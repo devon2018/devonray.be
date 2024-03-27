@@ -7,10 +7,17 @@ import OurTech from "@/components/Shared/OurTech";
 import Portfolio from "@/components/Shared/Portfolio";
 import { Suspense } from "react";
 
-import mobAppImage from '../../../../public/services/app-dev.jpg';
-import webImage from '../../../../public/services/web-dev.jpg';
-import devopsImage from '../../../../public/services/devops.jpg';
-import customSoftwareImage from '../../../../public/services/software.jpg';
+import mobAppImage from "../../../../public/services/app-dev.jpg";
+import webImage from "../../../../public/services/web-dev.jpg";
+import devopsImage from "../../../../public/services/devops.jpg";
+import customSoftwareImage from "../../../../public/services/software.jpg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Freelance Software Developer - Devon Ray",
+  description:
+    "Expert freelance software developer (Laravel, Flutter, React) for Hire. Build scalable web & mobile apps. AWS, DevOps & Serverless Experience. Free Consultation!",
+};
 
 export default function Home() {
   return (
@@ -41,17 +48,20 @@ export default function Home() {
           {
             title: "Web App Development",
             image: webImage,
-            description: "Using cutting-edge frameworks like React, Vue & Svelte, I build high performant web apps and platforms that help you reach a wider audience and take your business to the next level.",
+            description:
+              "Using cutting-edge frameworks like React, Vue & Svelte, I build high performant web apps and platforms that help you reach a wider audience and take your business to the next level.",
           },
           {
             title: "Custom Software Development",
             image: customSoftwareImage,
-            description: "Need a tech solution that fits like a glove? My expertise in Python, PHP and frameworks like Laravel, FastAPI and more allow me to design and develop custom software that streamlines your workflow and supercharges your productivity.",
+            description:
+              "Need a tech solution that fits like a glove? My expertise in Python, PHP and frameworks like Laravel, FastAPI and more allow me to design and develop custom software that streamlines your workflow and supercharges your productivity.",
           },
           {
             title: "DevOps and Infrastructure Development",
             image: devopsImage,
-            description: "Building and maintaining the platform infrastructure is my jam! I leverage tools like AWS, Jira, Github, and Github Actions to implement DevOps practices that ensure smooth operation, scalability, and a streamlined development workflow.",
+            description:
+              "Building and maintaining the platform infrastructure is my jam! I leverage tools like AWS, Jira, Github, and Github Actions to implement DevOps practices that ensure smooth operation, scalability, and a streamlined development workflow.",
           },
         ]}
       />
