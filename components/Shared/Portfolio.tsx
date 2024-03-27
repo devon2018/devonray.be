@@ -7,7 +7,6 @@ import "swiper/css/scrollbar";
 import "swiper/css/grid";
 import { HiOutlineArrowSmLeft, HiOutlineArrowSmRight } from "react-icons/hi";
 import Image from "next/image";
-import squareImage from "../../public/900.png";
 import Link from "next/link";
 
 import rdImage from "../../public/projects/redi-bg.jpg";
@@ -79,10 +78,20 @@ const Portfolio: React.FC<PortfolioProps> = ({
     <section id={sectionId} className="px-5 bg-gray-900 py-10 pb-20">
       <div className="relative">
         <Swiper
-          spaceBetween={50}
-          slidesPerView={3}
-          // onSlideChange={() => console.log("slide change")}
-          // onSwiper={(swiper) => console.log(swiper)}
+          breakpoints={{
+            576: {
+              spaceBetween: 40,
+              slidesPerView: 1.5,
+            },
+            700: {
+              spaceBetween: 40,
+              slidesPerView: 2.5,
+            },
+            1018: {
+              spaceBetween: 50,
+              slidesPerView: 3,
+            },
+          }}
           grid={{
             rows: 1,
             fill: "row",
@@ -98,9 +107,9 @@ const Portfolio: React.FC<PortfolioProps> = ({
           </div>
 
           <SwiperSlide className="aspect-square">
-            <div className="flex items-start justify-center flex-col w-full h-full pl-20">
-              <h3 className="text-3xl font-semibold text-center">{title}</h3>
-              <p>{subtitle}</p>
+            <div className="flex items-start justify-center flex-col w-full h-full pl-20 text-left">
+              <h3 className="text-3xl font-semibold text-left">{title}</h3>
+              <p className="">{subtitle}</p>
             </div>
           </SwiperSlide>
 
@@ -121,10 +130,10 @@ const Portfolio: React.FC<PortfolioProps> = ({
                   className="object-cover w-full h-full"
                 />
                 <div className="opacity-0 group-hover:opacity-100 flex w-full h-full top-0 left-0 bg-black/50 absolute transition-all ease-in-out items-center justify-center flex-col text-white">
-                  <h4 className="text-3xl font-semibold tracking-wider uppercase">
+                  <h4 className="text-xl lg:text-3xl font-semibold tracking-wider uppercase text-center">
                     {project.title}
                   </h4>
-                  <p className="text-xl">{project.subline[lang]}</p>
+                  <p className="lg:text-xl">{project.subline[lang]}</p>
                 </div>
               </Link>
             </SwiperSlide>
