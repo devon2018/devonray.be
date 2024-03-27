@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  @apply px-5 bg-gray-900 rounded-full font-semibold text-sm h-10 items-center flex justify-center hover:bg-gray-800 transition-all ease-in-out text-white;
+}
+
+.form-input {
+  @apply block px-4 py-3 border-b-2 bg-transparent border-b-gray-600 focus:border-white my-4 w-full focus:outline-none focus:ring-0 transition-all ease-in-out ring-0 outline-none;
+}
+
+.tech-row {
+  @apply md:grid grid-cols-5 gap-5 my-4 border-b border-gray-700 last-of-type:border-b-0 pb-4;
+}
+.tech-header {
+  @apply text-xl font-semibold flex items-center justify-start mb-2 md:mb-0;
+}
+.tech-items {
+  @apply col-span-4 flex gap-2 items-center justify-start flex-wrap;
+}
+.tech-item {
+  @apply bg-gray-950 rounded-full flex items-center justify-center px-4 py-2 tracking-wider text-sm;
+}
+
+.tech-item > svg {
+  @apply mr-1 text-xl;
+}
+
+.nav-lang-link {
+  @apply text-sm uppercase text-gray-400 hover:text-white data-[active=true]:text-primary data-[active=true]:hover:text-primary;
+}
