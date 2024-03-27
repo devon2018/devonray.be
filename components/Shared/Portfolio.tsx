@@ -129,7 +129,7 @@ const Portfolio: React.FC<PortfolioProps> = ({
                   alt={project.subline[lang]}
                   className="object-cover w-full h-full"
                 />
-                <div className="opacity-0 group-hover:opacity-100 flex w-full h-full top-0 left-0 bg-black/50 absolute transition-all ease-in-out items-center justify-center flex-col text-white">
+                <div className="md:opacity-0 group-hover:opacity-100 flex w-full h-full top-0 left-0 bg-black/50 absolute transition-all ease-in-out items-center justify-center flex-col text-white">
                   <h4 className="text-xl lg:text-3xl font-semibold tracking-wider uppercase text-center">
                     {project.title}
                   </h4>
